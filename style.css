@@ -1,0 +1,391 @@
+.h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    background-image: linear-gradient(165deg,black,grey,rgb(32, 32, 32));
+    
+}
+
+.website-links {
+    margin-top: 10px;
+    margin-left: .09%;
+    margin-bottom: 20px;
+}
+
+.website-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 40px;
+}
+
+.website-links a:hover {
+    background-color: #555;
+}
+
+
+header {
+    font-family: 'Germania One', cursive;
+    letter-spacing: 6px;
+    font-size: 50px;
+    text-align: center;
+    padding: 1rem;
+    animation: fadeInAnimation 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #333;
+    padding: 30px;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: slideUpAnimation 1.5s ease-in-out;
+}
+
+.container img {
+    width: 40%;
+    max-height: 220px;
+    object-fit:cover;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+.intro{
+    position: relative;
+}
+
+.img_quote {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.text {
+    font-family: 'Bona Nova', serif;
+    text-align: right;
+    font-style: italic;
+    font-size: 150%;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    right:1%;
+    transform: translateY(-50%);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.achievements {
+    background-color: #333;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: scrollUpAnimation 1s ease-in-out forwards;
+}
+
+.achievements-list {
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpAnimation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.achievements-list li {
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes achievementsAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.achievements-list li:nth-child(1) {
+    animation: achievementsAnimation 1s ease-in-out forwards;
+}
+
+.achievements-list li:nth-child(2) {
+    animation: achievementsAnimation 1s ease-in-out forwards 200ms;
+}
+
+.achievements-list li:nth-child(3) {
+    animation: achievementsAnimation 1s ease-in-out forwards 400ms;
+}
+
+.achievements-list li:nth-child(4) {
+    animation: achievementsAnimation 1s ease-in-out forwards 600ms;
+}
+
+.achievements-list li:nth-child(5) {
+    animation: achievementsAnimation 1s ease-in-out forwards 800ms;
+}
+
+.achievements-list li:nth-child(6) {
+    animation: achievementsAnimation 1s ease-in-out forwards 1000ms;
+}
+
+.achievements-list li:nth-child(7) {
+    animation: achievementsAnimation 1s ease-in-out forwards 1200ms;
+}
+
+.achievements-list li:nth-child(8) {
+    animation: achievementsAnimation 1s ease-in-out forwards 1400ms;
+}
+
+.achievements-list li:nth-child(9) {
+    animation: achievementsAnimation 1s ease-in-out forwards 1600ms;
+}
+
+.achievements-list li:nth-child(10) {
+    animation: achievementsAnimation 1s ease-in-out forwards 1800ms;
+}
+
+.achievements-list li:nth-child(11) {
+    animation: achievementsAnimation 1s ease-in-out forwards 2000ms;
+}
+
+.achievements-list li:nth-child(12) {
+    animation: achievementsAnimation 1s ease-in-out forwards 2200ms;
+}
+
+.achievements-list li:nth-child(13) {
+    animation: achievementsAnimation 1s ease-in-out forwards 2400ms;
+}
+
+.achievements-list li:nth-child(14) {
+    animation: achievementsAnimation 1s ease-in-out forwards 2600ms;
+}
+
+.achievements-list li:nth-child(15) {
+    animation: achievementsAnimation 1s ease-in-out forwards 2800ms;
+}
+
+.achievements-list li:nth-child(16) {
+    animation: achievementsAnimation 1s ease-in-out forwards 3000ms;
+}
+
+.achievements-list li:nth-child(17) {
+    animation: achievementsAnimation 1s ease-in-out forwards 3200ms;
+}
+
+.achievements-list li:nth-child(18) {
+    animation: achievementsAnimation 1s ease-in-out forwards 3400ms;
+}
+
+.achievements-list li:nth-child(19) {
+    animation: achievementsAnimation 1s ease-in-out forwards 3600ms;
+}
+
+.achievements-list li:nth-child(20) {
+    animation: achievementsAnimation 1s ease-in-out forwards 3800ms;
+}
+
+.achievements-list li:nth-child(21) {
+    animation: achievementsAnimation 1s ease-in-out forwards 4000ms;
+}
+
+.achievements-list li:nth-child(22) {
+    animation: achievementsAnimation 1s ease-in-out forwards 4200ms;
+}
+
+.achievements-list li:nth-child(23) {
+    animation: achievementsAnimation 1s ease-in-out forwards 4400ms;
+}
+
+.achievements-list li:nth-child(24) {
+    animation: achievementsAnimation 1s ease-in-out forwards 4600ms;
+}
+
+.achievements-list li:nth-child(25) {
+    animation: achievementsAnimation 1s ease-in-out forwards 4800ms;
+}
+
+.achievements-list li:nth-child(26) {
+    animation: achievementsAnimation 1s ease-in-out forwards 5000ms;
+}
+
+.achievements-list li:nth-child(27) {
+    animation: achievementsAnimation 1s ease-in-out forwards 5200ms;
+}
+
+.achievements-list li:nth-child(28) {
+    animation: achievementsAnimation 1s ease-in-out forwards 5400ms;
+}
+
+.achievements-list li:nth-child(29) {
+    animation: achievementsAnimation 1s ease-in-out forwards 5600ms;
+}
+
+.achievements-list li:nth-child(30) {
+    animation: achievementsAnimation 1s ease-in-out forwards 5800ms;
+}
+
+
+
+.stats {
+    background-color: #333;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: scrollUpAnimation 1s ease-in-out forwards; 
+}
+
+.stats h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stats-list {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.stats-list li {
+    margin-bottom: 8px;
+}
+
+@keyframes scrollUpAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.clubs {
+    background-color: #333;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: scrollUpAnimation 1s ease-in-out forwards;
+}
+
+.clubs h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.clubs-list {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.clubs-list li {
+    margin-bottom: 8px;
+}
+
+.career-highlights {
+    background-color: #333;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: scrollUpAnimation 1s ease-in-out forwards;
+}
+
+.career-highlights h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.highlights-list {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.highlights-list li {
+    margin-bottom: 8px;
+}
+
+
+
+
+
+.clubs-list img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
